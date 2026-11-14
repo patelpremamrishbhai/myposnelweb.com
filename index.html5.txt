@@ -1,0 +1,13 @@
+PATELPREM-WEBSITE/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── prem1.jpg
+├── prem2.jpg
+├── prem3.jpg
+├── prem4.jpg
+├── prem5.jpg
+├── prem6.jpg
+└── prem7.jpg

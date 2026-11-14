@@ -1,0 +1,41 @@
+
+// Mobile Menu
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+menuBtn.addEventListener("click", function() {
+  nav.classList.toggle("open");
+
+  menuBtn.textContent =
+    nav.classList.contains("open") ? "×" : "☰";
+});
+
+// Close menu after clicking a link
+document.querySelectorAll("#nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuBtn.textContent = "☰";
+  });
+});
+
+// Typing Text Animation
+const words = [
+  "AI & Technology",
+  "Web Development",
+  "App Development",
+  "Problem Solving"
+];
+
+let wordIndex = 0;
+
+setInterval(() => {
+  wordIndex = (wordIndex + 1) % words.length;
+
+  document.getElementById("typing").textContent =
+    words[wordIndex];
+
+}, 2200);
+
+// Automatic Copyright Year
+document.getElementById("year").textContent =
+  new Date().getFullYear();
